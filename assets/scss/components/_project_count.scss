@@ -1,0 +1,47 @@
+/*
+************
+*************************
+27. Project-count
+******************************************************* 
+*************************************************************** */
+@use '../abstracts/variables' as *;
+
+.sg-project-count-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media #{$xs} {
+        flex-wrap: wrap;
+    }
+}
+.sg-project-count-item {
+    text-align: center;
+    position: relative;
+    @media #{$xs} {
+        width: 100%;
+    }
+    @media #{$sm} {
+        width: 50%;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        font-family: $unna;
+        line-height: 1.2;
+        color: var(--pr-2);
+        margin-bottom: 6px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--font-color-1);
+        font-family: $nunito;
+        margin-bottom: 0;
+    }
+    img {
+        position: absolute;
+        left: 36px;
+        top: 0;
+    }
+}
